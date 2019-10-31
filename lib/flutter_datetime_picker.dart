@@ -322,6 +322,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
                       alignment: Alignment.center,
                       child: Text(
                         content,
+                        textScaleFactor: 1,
                         style: theme.itemStyle,
                         textAlign: TextAlign.start,
                       ),
@@ -351,6 +352,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
           }),
           Text(
             widget.pickerModel.leftDivider(),
+            textScaleFactor: 1,
             style: theme.itemStyle,
           ),
           _renderColumnView(
@@ -368,6 +370,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
           }),
           Text(
             widget.pickerModel.rightDivider(),
+            textScaleFactor: 1,
             style: theme.itemStyle,
           ),
           _renderColumnView(
@@ -403,6 +406,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
               padding: EdgeInsets.only(left: 16, top: 0),
               child: Text(
                 '$cancel',
+                textScaleFactor: 1,
                 style: theme.cancelStyle,
               ),
               onPressed: () => Navigator.pop(context),
@@ -415,6 +419,7 @@ class _DatePickerState extends State<_DatePickerComponent> {
               padding: EdgeInsets.only(right: 16, top: 0),
               child: Text(
                 '$done',
+                textScaleFactor: 1,
                 style: theme.doneStyle,
               ),
               onPressed: () {
