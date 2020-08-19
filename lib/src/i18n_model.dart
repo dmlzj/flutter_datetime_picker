@@ -6,12 +6,15 @@ enum LocaleType {
   ru,
   it,
   fr,
+  gr,
   es,
   pl,
   pt,
   ko,
+  kk,
   ar,
   tr,
+  az,
   jp,
   de,
   da,
@@ -21,7 +24,13 @@ enum LocaleType {
   hy,
   id,
   bg,
-  eu
+  eu,
+  cat,
+  th,
+  si,
+  no,
+  sq,
+  sv
 }
 
 final _i18nModel = {
@@ -102,6 +111,9 @@ final _i18nModel = {
     'done': 'تایید',
     'today': 'امروز',
     'monthShort': [
+      'دی',
+      'بهمن',
+      'اسفند',
       'فروردین',
       'اردیبهشت',
       'خرداد',
@@ -111,11 +123,11 @@ final _i18nModel = {
       'مهر',
       'آبان',
       'آذر',
-      'دی',
-      'بهمن',
-      'اسفند'
     ],
     'monthLong': [
+      'دی',
+      'بهمن',
+      'اسفند',
       'فروردین',
       'اردیبهشت',
       'خرداد',
@@ -125,19 +137,8 @@ final _i18nModel = {
       'مهر',
       'آبان',
       'آذر',
-      'دی',
-      'بهمن',
-      'اسفند'
     ],
-    'day': [
-      'دوشنبه',
-      'سه شنبه',
-      'چهارشنبه',
-      'پنج شنبه',
-      'جمعه',
-      'شنبه',
-      'یکشنبه'
-    ],
+    'day': ['دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنج شنبه', 'جمعه', 'شنبه', 'یکشنبه'],
     'am': 'صبح',
     'pm': 'عصر'
   },
@@ -146,34 +147,8 @@ final _i18nModel = {
     'cancel': '取消',
     'done': '确定',
     'today': '今天',
-    'monthShort': [
-      '一月',
-      '二月',
-      '三月',
-      '四月',
-      '五月',
-      '六月',
-      '七月',
-      '八月',
-      '九月',
-      '十月',
-      '十一月',
-      '十二月'
-    ],
-    'monthLong': [
-      '一月',
-      '二月',
-      '三月',
-      '四月',
-      '五月',
-      '六月',
-      '七月',
-      '八月',
-      '九月',
-      '十月',
-      '十一月',
-      '十二月'
-    ],
+    'monthShort': ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    'monthLong': ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
     'day': ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'],
     'am': '上午',
     'pm': '下午'
@@ -331,6 +306,42 @@ final _i18nModel = {
     'am': 'AM',
     'pm': 'PM'
   },
+  'gr': {
+    'cancel': 'Άκυρο',
+    'done': 'Επιβεβαίωση',
+    'today': 'Σήμερα',
+    'monthShort': [
+      'Ιαν',
+      'Φεβρ',
+      'Μάρτ',
+      'Απρ',
+      'Μάι',
+      'Ιούν',
+      'Ιούλ',
+      'Αύγ',
+      'Σεπτ',
+      'Οκτ',
+      'Νοέμβρ',
+      'Δεκ'
+    ],
+    'monthLong': [
+      'Ιανουάριος',
+      'Φεβρουάριος',
+      'Μάρτιος',
+      'Απρίλιος',
+      'Μάιος',
+      'Ιούνιος',
+      'Ιούλιος',
+      'Αύγουστος',
+      'Σεπτέμβριος',
+      'Οκτώβριος',
+      'Νοέμβριος',
+      'Δεκέμβριος'
+    ],
+    'day': ['Δευτ', 'Τρ', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ', 'Κυρ'],
+    'am': 'π.μ',
+    'pm': 'μ.μ'
+  },
   'es': {
     'cancel': 'Cancelar',
     'done': 'Confirmar',
@@ -443,37 +454,47 @@ final _i18nModel = {
     'cancel': '취소',
     'done': '완료',
     'today': '오늘',
-    'monthShort': [
-      '1월',
-      '2월',
-      '3월',
-      '4월',
-      '5월',
-      '6월',
-      '7월',
-      '8월',
-      '9월',
-      '10월',
-      '11월',
-      '12월'
-    ],
-    'monthLong': [
-      '1월',
-      '2월',
-      '3월',
-      '4월',
-      '5월',
-      '6월',
-      '7월',
-      '8월',
-      '9월',
-      '10월',
-      '11월',
-      '12월'
-    ],
+    'monthShort': ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+    'monthLong': ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
     'day': ['월', '화', '수', '목', '금', '토', '일'],
     'am': '오전',
     'pm': '오후'
+  },
+  'kk': {
+    'cancel': 'Жою',
+    'done': 'Дайын',
+    'today': 'бүгін',
+    'monthShort': [
+      'Қаң',
+      'Ақп',
+      'Нау',
+      'Сәу',
+      'Мам',
+      'Мау',
+      'Шіл',
+      'Там',
+      'Қыр',
+      'Қаз',
+      'Қар',
+      'Жел'
+    ],
+    'monthLong': [
+      'Қаңтар',
+      'Ақпан',
+      'Наурыз',
+      'Сәуір',
+      'Мамыр',
+      'Маусым',
+      'Шілде',
+      'Тамыз',
+      'Қыркүйек',
+      'Қазан',
+      'Қараша',
+      'Желтоқсан'
+    ],
+    'day': ['Дү', 'Сй', 'Ср', 'Бе', 'Жм', 'Сн', 'Же'],
+    'am': 'AM',
+    'pm': 'PM'
   },
   'ar': {
     'cancel': 'إنهاء',
@@ -507,15 +528,7 @@ final _i18nModel = {
       'نوفمبر',
       'ديسمبر'
     ],
-    'day': [
-      'الإثنين',
-      'الثلاثاء',
-      'الأربعاء',
-      'الخميس',
-      'الجمعه',
-      'السبت',
-      'الاحد'
-    ],
+    'day': ['الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعه', 'السبت', 'الاحد'],
     'am': 'ص',
     'pm': 'م'
   },
@@ -555,39 +568,49 @@ final _i18nModel = {
     'am': 'ÖÖ',
     'pm': 'ÖS'
   },
+  'az': {
+    'cancel': 'Ləğv et',
+    'done': 'Bitdi',
+    'today': 'Bugün',
+    'monthShort': [
+      'Yan',
+      'Fev',
+      'Mar',
+      'Apr',
+      'May',
+      'İyn',
+      'İyl',
+      'Avq',
+      'Sen',
+      'Okt',
+      'Noy',
+      'Dek'
+    ],
+    'monthLong': [
+      'Yanvar',
+      'Fevral',
+      'Mart',
+      'Aprel',
+      'May',
+      'İyun',
+      'İyul',
+      'Avqust',
+      'Sentyabr',
+      'Oktyabr',
+      'Noyabr',
+      'Dekabr'
+    ],
+    'day': ['B.E', 'Ç.A', 'Ç', 'C.A', 'C.', 'Ş.', 'B.'],
+    'am': 'ÖÖ',
+    'pm': 'ÖS'
+  },
   'jp': {
     //Japanese
     'cancel': 'キャンセル',
-    'done': '決定する',
+    'done': '完了',
     'today': '今日',
-    'monthShort': [
-      '1月',
-      '2月',
-      '3月',
-      '4月',
-      '5月',
-      '6月',
-      '7月',
-      '8月',
-      '9月',
-      '10月',
-      '11月',
-      '12月'
-    ],
-    'monthLong': [
-      '1月',
-      '2月',
-      '3月',
-      '4月',
-      '5月',
-      '6月',
-      '7月',
-      '8月',
-      '9月',
-      '10月',
-      '11月',
-      '12月'
-    ],
+    'monthShort': ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+    'monthLong': ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
     'day': ['月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日', '日曜日'],
     'am': '午前',
     'pm': '午後'
@@ -893,6 +916,225 @@ final _i18nModel = {
     'am': 'AM',
     'pm': 'PM'
   },
+  'cat': {
+    // catalan
+    'cancel': 'Cancel·la',
+    'done': 'Confirmar',
+    'today': 'Avui',
+    'monthShort': [
+      'Gen',
+      'Febr',
+      'Març',
+      'Abr',
+      'Maig',
+      'Juny',
+      'Jul',
+      'Ag',
+      'Set',
+      'Oct',
+      'Nov',
+      'Des'
+    ],
+    'monthLong': [
+      'Gener',
+      'Febrer',
+      'Març',
+      'Abril',
+      'Maig',
+      'Juny',
+      'Juliol',
+      'Agost',
+      'Setembre',
+      'Octubre',
+      'Novembre',
+      'Decembre'
+    ],
+    'day': ['Dl', 'Dt', 'Dc', 'Dj', 'Dv', 'Ds', 'Dg'],
+    'am': 'AM',
+    'pm': 'PM'
+  },
+  'th': {
+    //thai
+    'cancel': 'ยกเลิก',
+    'done': 'ตกลง',
+    'today': 'วันนี้',
+    'monthShort': [
+      'ม.ค',
+      'ก.พ',
+      'มี.ค',
+      'เม.ย',
+      'พ.ค',
+      'มิ.ย',
+      'ก.ค',
+      'ส.ค',
+      'ก.ย',
+      'ต.ค',
+      'พ.ย',
+      'ธ.ค'
+    ],
+    'monthLong': [
+      'มกราคม',
+      'กุมภาพันธ์',
+      'มีนาคม',
+      'เมษายน',
+      'พฤษภาคม',
+      'มิถุนายน',
+      'กรกฎาคม',
+      'สิงหาคม',
+      'กันยายน',
+      'ตุลาคม',
+      'พฤศจิกายน',
+      'ธันวาคม'
+    ],
+    'day': ['จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.', 'อา.'],
+    'am': 'AM',
+    'pm': 'PM'
+  },
+  'si': {
+    //Slovenian
+    'cancel': 'Prekliči',
+    'done': 'V redu',
+    'today': 'Danes',
+    'monthShort': [
+      'jan',
+      'feb',
+      'mar',
+      'apr',
+      'maj',
+      'jun',
+      'jul',
+      'avg',
+      'sep',
+      'okt',
+      'nov',
+      'dec'
+    ],
+    'monthLong': [
+      'januar',
+      'februar',
+      'marec',
+      'april',
+      'maj',
+      'junij',
+      'julij',
+      'avgust',
+      'september',
+      'oktober',
+      'november',
+      'december'
+    ],
+    'day': ['pon', 'tor', 'sre', 'čet', 'pet', 'sob', 'ned'],
+    'am': '',
+    'pm': ''
+  },
+  'no': {
+    'cancel': 'Avbryt',
+    'done': 'Ferdig',
+    'today': 'Idag',
+    'monthShort': [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'Mai',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Okt',
+      'Nov',
+      'Des'
+    ],
+    'monthLong': [
+      'Januar',
+      'Februar',
+      'Mars',
+      'April',
+      'Mai',
+      'Juni',
+      'Juli',
+      'August',
+      'September',
+      'Oktober',
+      'November',
+      'Desember'
+    ],
+    'day': ['Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør', 'Søn'],
+    'am': '',
+    'pm': ''
+  },
+  'sq': {
+    'cancel': 'Anulo',
+    'done': 'Perfundo',
+    'today': 'Sot',
+    'monthShort': [
+      'Jan',
+      'Shk',
+      'Mar',
+      'Pri',
+      'Maj',
+      'Qer',
+      'Kor',
+      'Gus',
+      'Sht',
+      'Tet',
+      'Nen',
+      'Dhj'
+    ],
+    'monthLong': [
+      'Janar',
+      'Shkurt',
+      'Mars',
+      'Prill',
+      'Maj',
+      'Qershor',
+      'Korrik',
+      'Gusht',
+      'Shtator',
+      'Tetor',
+      'Nentor',
+      'Dhjetor'
+    ],
+    'day': ['Hen', 'Mar', 'Mer', 'Enj', 'Pre', 'Sht', 'Die'],
+    'am': 'PD',
+    'pm': 'MD'
+  },
+  'sv': {
+    'cancel': 'Avbryt',
+    'done': 'Klar',
+    'today': 'I dag',
+    'monthShort': [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'Maj',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Okt',
+      'Nov',
+      'Dec'
+    ],
+    'monthLong': [
+      'Januari',
+      'Februari',
+      'Mars',
+      'April',
+      'Maj',
+      'Juni',
+      'Juli',
+      'Augusti',
+      'September',
+      'Oktober',
+      'November',
+      'December'
+    ],
+    'day': ['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'],
+    'am': 'AM',
+    'pm': 'PM'
+  }
 };
 //get international object
 Map<String, dynamic> i18nObjInLocale(LocaleType type) {
@@ -909,6 +1151,8 @@ Map<String, dynamic> i18nObjInLocale(LocaleType type) {
       return _i18nModel['it'];
     case LocaleType.fr:
       return _i18nModel['fr'];
+    case LocaleType.gr:
+      return _i18nModel['gr'];
     case LocaleType.es:
       return _i18nModel['es'];
     case LocaleType.pl:
@@ -917,10 +1161,14 @@ Map<String, dynamic> i18nObjInLocale(LocaleType type) {
       return _i18nModel['pt'];
     case LocaleType.ko:
       return _i18nModel['ko'];
+    case LocaleType.kk:
+      return _i18nModel['kk'];
     case LocaleType.ar:
       return _i18nModel['ar'];
     case LocaleType.tr:
       return _i18nModel['tr'];
+    case LocaleType.az:
+      return _i18nModel['az'];
     case LocaleType.jp:
       return _i18nModel['jp'];
     case LocaleType.de:
@@ -941,6 +1189,18 @@ Map<String, dynamic> i18nObjInLocale(LocaleType type) {
       return _i18nModel['bg'];
     case LocaleType.eu:
       return _i18nModel['eu'];
+    case LocaleType.cat:
+      return _i18nModel['cat'];
+    case LocaleType.th:
+      return _i18nModel['th'];
+    case LocaleType.si:
+      return _i18nModel['si'];
+    case LocaleType.no:
+      return _i18nModel['no'];
+    case LocaleType.sq:
+      return _i18nModel['sq'];
+    case LocaleType.sv:
+      return _i18nModel['sv'];
     default:
       return _i18nModel['en'];
   }

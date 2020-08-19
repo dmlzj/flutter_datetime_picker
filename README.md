@@ -6,11 +6,14 @@ A flutter date time picker inspired by [flutter-cupertino-date-picker](https://g
 
 you can choose date / time / date&time in multiple languages:
 
+- Albanian(sq)
 - Arabic(ar)
 - Armenian(hy)
+- Azerbaijan(az)
 - Basque(eu)
 - Bengali(bn)
 - Bulgarian(bg)
+- Catalan(cat)
 - Chinese(zh)
 - Danish(da)
 - Dutch(nl)
@@ -20,12 +23,15 @@ you can choose date / time / date&time in multiple languages:
 - Indonesian(id)
 - Italian(it)
 - Japanese(jp)
+- Kazakh(kk)
 - Korean(ko)
 - Persian(fa)
 - Polish (pl)
 - Portuguese(pt)
 - Russian(ru)
 - Spanish(es)
+- Swedish(sv)
+- Thai(th)
 - Turkish(tr)
 - Vietnamese(vi)
 
